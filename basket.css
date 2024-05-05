@@ -1,0 +1,220 @@
+body{
+    font-family: Arial, Helvetica, sans-serifx ;
+    background-color: orange;
+    padding:0;
+    margin: 0;
+    /* color: #fff; */
+}
+
+body .page{
+    margin: 20px 60px;
+}
+
+/*Barre de navigation */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    position: sticky;
+    top: 0;
+    background-color: #141;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    border-bottom: black solid 1px;
+    padding-bottom: 10px;
+}
+
+nav .buttons button{
+    padding: 13px 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+
+nav .buttons .login{
+    background-color : inherit;
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+nav .buttons .register{
+    margin-right: 10px;
+    background-color: #f452ff;
+    text-decoration: none;
+    color: black;
+    outline: none;
+
+}
+nav .buttons .register a
+{
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+
+
+nav .buttons .login a{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    border-bottom: black solid 1px;
+    padding-bottom: 10px;
+}
+
+/* Fin de la barre de navigation  */
+
+/* Debut du header */
+
+/* header{
+    margin-top: 40px;
+    background: url(basket5.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 200px;
+}
+
+header .h1{
+    /*display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 150px;
+} */
+
+header{
+    display: flex;
+    flex-direction: column;/* Sa aligne tout les elements de la div en colonne*/
+    align-items: center; /* Centrer tout les elements du header */
+    background: url(icone.webp);
+    background-size: cover;
+
+    color: #141;
+    padding: 140px;
+    background-repeat: no-repeat;
+    
+}
+
+header h1{
+    font-family: Arial;
+    font-size: 50px;
+    color: #000;
+
+}
+
+
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main .content .card .right img{
+    height: 600px;
+    width: 600px;
+    margin-top: 5px;
+
+
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+main .content .card .right{
+    flex: 0 0 70%;
+    
+}
+
+
+/* Pieds de page */
+
+footer{
+    margin-top: 40px;
+    border: 5px solid bisque;
+    background-color: #000;
+    padding: 30px 100px;
+    color: #fff;
+
+}
+
+footer h1{
+    font-family: fantasy;
+    border-bottom: 1px solid white;
+    width: 15%;
+    padding-bottom: 5px;
+
+}
+
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+footer .services .service{
+    margin-right: 5% ;
+    padding: 10px;
+    
+}
+
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+   
+}
+
+@media screen and (max-width: 680px) {
+    nav .onglets{
+    margin-left :0px;
+    margin-bottom : 20px;
+}
+
+    .main .card{
+        margin: 10px;
+    }
+
+    .main .content .card .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+    header{
+        background-size: auto;
+    }
+
+}
